@@ -1,0 +1,39 @@
+<div class="part one"></div>
+<div class="part inverted-one"></div>
+<div class="part three"></div>
+
+<style>
+  body{
+    background: #0B2429;
+    position: relative;
+  }
+  .part{
+    background: #F3AC3C;
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 0 50% 50%;
+  }
+  .one{
+    background: #F3AC3C;
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    z-index:7;
+  }
+  .inverted-one{
+    transform: rotate(180deg);
+    background: #F3AC3C;
+    position: absolute;
+    bottom: 138px;
+    left: 190px;
+    z-index:-1;
+  }
+  .three{
+    background: #998235;
+    position: absolute;
+    bottom: 80px;
+    left: 130px;
+    z-index: 5;
+  }
+  
+</style>

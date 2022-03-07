@@ -1,0 +1,72 @@
+<div></div>
+<div></div>
+<div></div>
+
+<style>
+  *{
+    margin:0;
+  }
+  body{
+    background: #F5D6B4;
+    position: relative;
+  }
+  body>*{
+    width:60px;
+    height:30px;
+    background: #F5D6B4;
+    position: absolute;
+    top:50%;
+    left:50%;
+    border: 20px solid #D86F45;
+  }
+  div:first-child{		
+    transform: translate(-50%, -95%);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom: none;
+  }
+  div:nth-child(2){
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: none;
+    transform: translate(30%);
+  }
+  div:nth-child(2)::after{		
+    content: "";
+    width: 20px;
+    height: 10px;
+    background: #D86F45;
+    position: absolute;
+    left:50%;
+    right: 50%;
+    transform: translate(148%, -96%);
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+  }
+   div:nth-child(3){
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: none;
+    transform: translate(-130%);
+  }
+  div:nth-child(3)::before{		
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #D86F45;
+    position: absolute;
+    left:50%;
+    right: 50%;
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+    transform: translate(-250%,-50%);
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
